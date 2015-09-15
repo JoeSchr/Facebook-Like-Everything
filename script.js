@@ -7,12 +7,13 @@
 var sad = document.getElementsByClassName('UFILikeLink')
 var happy = []
 var halt = false
+var commentLike = "Like this comment"
 
 // Select only the Like buttons.
 // Convert the sad NodeList to a happy Array.
 for (var i = 0; i < sad.length; i++) {
-  // Filter liked
-  if (!hasClass(sad[i], 'UFILinkBright')) {
+  // Filter liked, don't take comment likes
+  if (!hasClass(sad[i], 'UFILinkBright') && !hasTitle(sad[i],commentLike)) {
     happy.push(sad[i])
   }
 }
@@ -47,6 +48,11 @@ function haltFn () {
 
 function hasClass (target, className) {
   return new RegExp('(\\s|^)' + className + '(\\s|$)').test(target.className)
+}
+
+function hasTitle(target, string){
+  var title = target.getAttribute("title")
+  return title && title == string
 }
 
 happyFn(happy)

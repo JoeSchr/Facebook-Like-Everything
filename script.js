@@ -1,5 +1,5 @@
 /* PINTEREST */
-do {$(".FollowButton:not(.followed").click()} while ($(".moreItems:visible").length)
+do {$(".FollowButton:not(.followed").click(); $(".moreItems:visible").click()} while ($(".moreItems:visible").length)
 
 /*
     I Like Everything

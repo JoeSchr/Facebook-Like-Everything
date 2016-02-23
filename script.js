@@ -1,5 +1,23 @@
 /* PINTEREST */
-do {$(".FollowButton:not(.followed").click(); $(".moreItems:visible").click()} while ($(".moreItems:visible").length)
+function followAll()
+{
+    var flwBtn = ".FollowButton:not(.followed)";
+    var nxtBtn = ".moreItems:visible";
+    var $flwBtn = $(flwBtn);
+    var $nxtBtn = $(nxtBtn)
+    $flwBtn.click();
+    if($nxtBtn.length==0)
+        clearInterval();
+    else
+        $nxtBtn.click()
+}
+setInterval(followAll,1000)
+
+    
+    
+    
+//} while (fCount>0);
+}
 
 /*
     I Like Everything

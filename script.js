@@ -1,3 +1,6 @@
+/* PINTEREST */
+do {$(".FollowButton:not(.followed").click()} while ($(".moreItems:visible").length)
+
 /*
     I Like Everything
     Description: Like everything on Facebook with this JavaScript Bookmarklet

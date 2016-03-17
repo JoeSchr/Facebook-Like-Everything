@@ -18,8 +18,6 @@ setInterval(followAll,1000)
     
     
 //} while (fCount>0);
-}
-
 /*
     I Like Everything
     Description: Like everything on Facebook with this JavaScript Bookmarklet

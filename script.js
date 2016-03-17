@@ -2,7 +2,8 @@
 function followAll()
 {
     var flwBtn = ".FollowButton:not(.followed)";
-    var nxtBtn = ".moreItems:visible";
+    //var nxtBtn = ".moreItems:visible"; // not working anymore
+    var nxtBtn = ".moreItems:enabled";
     var $flwBtn = $(flwBtn);
     var $nxtBtn = $(nxtBtn)
     $flwBtn.click();
